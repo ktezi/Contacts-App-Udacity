@@ -1,6 +1,7 @@
-# Contacts Project
-
-This repo is a code-along with the first project in the [React Nanodegree program](https://www.udacity.com/course/react-nanodegree--nd019).
+This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
+Live project link - http://ktezi.github.io/Contacts-App-Udacity
+Below you will find some information on how to perform common tasks.<br>
+You can find the most recent version of this guide [here](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md).
 
 Most of the commits in this repository correspond to videos in the program.
 
