@@ -186,3 +186,15 @@ body, .app {
   cursor: pointer;
   outline: none;
 }
+.image-wrap{
+  height:30%;
+  overflow:hidden;
+  width: 1000px;
+  margin-left: 220px;
+}
+.no-result-found{
+  max-width: 100%;
+  height: auto; 
+  display: inline-block;
+
+}
