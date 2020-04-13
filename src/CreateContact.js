@@ -5,31 +5,35 @@ import serializeForm from 'form-serialize'
 
 class CreateContact extends Component {
   handleSubmit = (e) => {
-    e.preventDefault()
+    console.log('inside')
+    e.preventDefault();
     const values = serializeForm(e.target, { hash: true })
-    if (this.props.onCreateContact)
-      this.props.onCreateContact(values)
+    console.log(values)
+    if (this.props.onCreateContact) {
+      this.props.onCreateContact(values);
+    }
   }
-
   render() {
     return (
       <div>
-        <Link className='close-create-contact' to='/'>Close</Link>
-        <form onSubmit={this.handleSubmit} className='create-contact-form'>
+        <Link className='close-create-contact'
+          to='/'
+        />
+        <form className='create-contact-form' onSubmit={this.handleSubmit}>
           <ImageInput
             className='create-contact-avatar-input'
             name='avatarURL'
-            maxHeight={64}
-          />
+            maxHeight={64} />
           <div className='create-contact-details'>
-            <input type='text' name='name' placeholder='Name'/>
-            <input type='text' name='email' placeholder='Email'/>
-            <button>Add Contact</button>
+            <input type='text' name='name' placeholder='Name' />
+            <input type='text' name='handle' placeholder='Handle' />
+            <button>Add contact</button>
           </div>
         </form>
       </div>
     )
   }
+
 }
 
 export default CreateContact

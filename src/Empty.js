@@ -7,7 +7,7 @@ export class Empty extends Component {
         console.log('empty', this.props.query.length)
         return (
             <div className='image-wrap'>
-                {this.props.query.length > this.props.contacts.length && (
+                {this.props.query && this.props.query.length > this.props.contacts.length && (
                     <div className='showing-contacts'>
                         <span>Now showing {this.props.showingContacts.length} of {this.props.contacts.length}</span>
                         <button onClick={this.props.showAll}>Show All</button>
